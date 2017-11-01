@@ -65,7 +65,7 @@ static NSString *cellIdentifier = @"TestCell";
     [super viewDidLoad];
     
     //有导航控制器才会显示
-    self.title = self.navigationController ? @"没有导航栏" : @"有导航栏";
+    self.title = self.navigationController ? @"有导航栏" : @"没有导航栏";
     
     [self prepareDataSource];
     [self createCollectionView];
