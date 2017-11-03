@@ -85,20 +85,20 @@ static NSString *cellIdentifier = @"TestCell";
                         @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_19517.jpg!128x96",
                         @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_18577.jpg!128x96"];
     
-    _bigImageURLs = @[@"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_112885.jpg!400",
-                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_112281.jpg!400",
-                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_111838.jpg!400",
-                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_111393.jpg!400",
-                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_110974.jpg!400",
-                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_110458.jpg!400",
-                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_19962.jpg!400",
-                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_19517.jpg!400",
-                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_18577.jpg!400"];
+    _bigImageURLs = @[@"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_112885.jpg!1280",
+                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_112281.jpg!1280",
+                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_111838.jpg!1280",
+                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_111393.jpg!1280",
+                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_110974.jpg!1280",
+                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_110458.jpg!1280",
+                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_19962.jpg!1280",
+                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_19517.jpg!1280",
+                      @"http://ures.kktv8.com/kktv/picture/20171101/9/118755805_18577.jpg!1280"];
 }
 
 - (void)createCollectionView
 {
-    //大图和小图的比例最好是一样的
+    //imageView的size宽高比最好和小图的宽高比一样
     CGFloat screenWidth = CGRectGetWidth([UIScreen mainScreen].bounds);
     CGFloat imageWidth = (screenWidth - 4 * 10.0) / 3.0;
     CGFloat imageHeight = imageWidth / 128.0 * 96.0;
